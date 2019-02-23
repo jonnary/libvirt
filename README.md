@@ -42,6 +42,7 @@ and installed with the usual commands. For example, to build in a manner
 that is suitable for installing as root, use:
 
 ```
+$ ./autogen.sh
 $ ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
 $ make
 $ sudo make install
@@ -50,6 +51,7 @@ $ sudo make install
 While to build & install as an unprivileged user
 
 ```
+$ ./autogen.sh
 $ ./configure --prefix=$HOME/usr
 $ make
 $ make install
